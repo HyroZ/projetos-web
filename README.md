@@ -1,4 +1,3 @@
-```html
 <div align="center">
 
 <h1>🏪 Repositório de Projetos para Negócios Locais</h1>
@@ -48,4 +47,4 @@ Desenvolvido por <strong>HyroZ</strong> 💙
 </p>
 
 </div>
-```
+
