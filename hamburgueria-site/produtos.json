@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "nome": "Smash Bacon",
+    "descricao": "Pão brioche artesanal, smash burger 180g, cheddar americano, bacon crocante e maionese temperada da casa",
+    "categoria": "hamburguer",
+    "preco": 32.90,
+    "imagem": "https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&h=280&fit=crop&q=80",
+    "destaque": true
+  },
+  {
+    "id": 2,
+    "nome": "Arte Classic",
+    "descricao": "Pão brioche tostado, smash burger 150g, queijo prato derretido, alface americana, tomate e molho especial da casa",
+    "categoria": "hamburguer",
+    "preco": 28.90,
+    "imagem": "https://images.unsplash.com/photo-1561758033-d89a9ad46330?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 3,
+    "nome": "Duplo Cheddar",
+    "descricao": "Pão brioche, dois smash burgers 150g, duplo cheddar americano, pickles artesanais e molho secreto",
+    "categoria": "hamburguer",
+    "preco": 39.90,
+    "imagem": "https://images.unsplash.com/photo-1596956470007-2bf6095e7e16?w=400&h=280&fit=crop&q=80",
+    "destaque": true
+  },
+  {
+    "id": 4,
+    "nome": "BBQ Especial",
+    "descricao": "Pão artesanal, burger 200g, bacon, cebola crispy, queijo gouda e molho BBQ defumado artesanal",
+    "categoria": "hamburguer",
+    "preco": 36.90,
+    "imagem": "https://images.unsplash.com/photo-1540189549336-e6e99eb4b398?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 5,
+    "nome": "Veggie Delícia",
+    "descricao": "Pão brioche, burger de grão-de-bico artesanal, queijo brie, rúcula fresca e pesto de manjericão",
+    "categoria": "hamburguer",
+    "preco": 29.90,
+    "imagem": "https://images.unsplash.com/photo-1520072959219-c595dc870360?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 6,
+    "nome": "Frango Crispy",
+    "descricao": "Pão brioche, filé de frango empanado crocante, molho honey mustard artesanal, alface e tomate",
+    "categoria": "hamburguer",
+    "preco": 27.90,
+    "imagem": "https://images.unsplash.com/photo-1585039262823-6c4f74bdfca4?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 7,
+    "nome": "Combo Smash Bacon",
+    "descricao": "Smash Bacon + Batata Frita Crocante + Refrigerante 350ml. Economia de R$ 7,00!",
+    "categoria": "combo",
+    "preco": 45.90,
+    "imagem": "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=400&h=280&fit=crop&q=80",
+    "destaque": true
+  },
+  {
+    "id": 8,
+    "nome": "Combo Arte Classic",
+    "descricao": "Arte Classic + Batata Frita Temperada + Refrigerante 350ml. Economia de R$ 5,90!",
+    "categoria": "combo",
+    "preco": 40.90,
+    "imagem": "https://images.unsplash.com/photo-1493770348161-369560ae357d?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 9,
+    "nome": "Combo Duplo Cheddar",
+    "descricao": "Duplo Cheddar + Batata Frita Crocante + Refrigerante 350ml. Economia de R$ 8,90!",
+    "categoria": "combo",
+    "preco": 52.90,
+    "imagem": "https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 10,
+    "nome": "Coca-Cola Lata 350ml",
+    "descricao": "Refrigerante gelado. Original ou Zero. Perfeito para acompanhar seu burguer.",
+    "categoria": "bebida",
+    "preco": 7.00,
+    "imagem": "https://images.unsplash.com/photo-1554866585-cd94860890b7?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 11,
+    "nome": "Suco Natural 300ml",
+    "descricao": "Feito na hora. Sabores: Laranja, Limão, Maracujá ou Abacaxi com Hortelã.",
+    "categoria": "bebida",
+    "preco": 10.00,
+    "imagem": "https://images.unsplash.com/photo-1621506289937-a8e4df240d0b?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 12,
+    "nome": "Milkshake Artesanal",
+    "descricao": "Cremoso e gelado 400ml. Sabores: Chocolate Belga, Baunilha, Morango ou Nutella.",
+    "categoria": "bebida",
+    "preco": 19.90,
+    "imagem": "https://images.unsplash.com/photo-1572490122747-3968b75cc699?w=400&h=280&fit=crop&q=80",
+    "destaque": true
+  },
+  {
+    "id": 13,
+    "nome": "Água Mineral 500ml",
+    "descricao": "Água mineral natural gelada. Com ou sem gás. Refrescante e essencial.",
+    "categoria": "bebida",
+    "preco": 4.00,
+    "imagem": "https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 14,
+    "nome": "Brownie com Sorvete",
+    "descricao": "Brownie de chocolate belga quente com bola de sorvete de creme e calda de chocolate.",
+    "categoria": "sobremesa",
+    "preco": 18.90,
+    "imagem": "https://images.unsplash.com/photo-1607920592519-bab2a80a619f?w=400&h=280&fit=crop&q=80",
+    "destaque": false
+  },
+  {
+    "id": 15,
+    "nome": "Petit Gateau",
+    "descricao": "Bolinho de chocolate quente com sorvete de creme artesanal e calda de frutas vermelhas.",
+    "categoria": "sobremesa",
+    "preco": 21.90,
+    "imagem": "https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?w=400&h=280&fit=crop&q=80",
+    "destaque": true
+  }
+]

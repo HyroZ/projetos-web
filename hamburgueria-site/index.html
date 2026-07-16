@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Test burguers - Hamburgueria Artesanal em Montes Claros. Ingredientes selecionados, sabor artesanal e entrega rápida. Peça agora pelo WhatsApp!">
+  <meta name="keywords"
+    content="hamburgueria artesanal, hamburguer, delivery, Montes Claros, MG, smash burger, Test burguers">
+  <meta name="author" content="Test burguers">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#6B0010">
+
+  <meta property="og:title" content="Test burguers - Hamburgueria Artesanal">
+  <meta property="og:description"
+    content="A Arte de Fazer Hambúrgueres Inesquecíveis. Ingredientes selecionados, sabor artesanal e entrega rápida.">
+  <meta property="og:type" content="restaurant.restaurant">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Test burguers — Hamburgueria Artesanal</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Raleway:wght@300;400;500;600;700&family=Oswald:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================
+       NAVBAR
+  ========================================= -->
+  <nav class="navbar" id="navbar" aria-label="Navegação principal">
+    <div class="nav-container">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="Test burguers - Ir para o início">
+        <span class="logo-icon">🔥</span>
+        <div class="logo-text">
+          <span class="logo-arte">TEST</span>
+          <span class="logo-burgers">BURGUERS</span>
+        </div>
+        <span class="logo-tag">Artesanal</span>
+      </a>
+
+      <!-- Links -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link" onclick="fecharMenu()">Home</a></li>
+        <li><a href="#cardapio" class="nav-link" onclick="fecharMenu()">Cardápio</a></li>
+        <li><a href="#promocoes" class="nav-link" onclick="fecharMenu()">Promoções</a></li>
+        <li><a href="#avaliacoes" class="nav-link" onclick="fecharMenu()">Avaliações</a></li>
+        <li><a href="#contato" class="nav-link" onclick="fecharMenu()">Contato</a></li>
+      </ul>
+
+      <!-- Ações -->
+      <div class="nav-actions">
+        <button class="cart-btn" id="cartBtn" aria-label="Abrir sacola de compras">
+          <svg class="cart-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+            <line x1="3" y1="6" x2="21" y2="6" />
+            <path d="M16 10a4 4 0 01-8 0" />
+          </svg>
+          <span class="cart-badge" id="cartBadge" aria-live="polite">0</span>
+        </button>
+
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menu de navegação" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Overlay do menu mobile -->
+  <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <section class="hero" id="home" aria-label="Seção principal">
+    <div class="hero-bg-pattern" aria-hidden="true"></div>
+
+    <div class="container hero-container">
+      <!-- Texto -->
+      <div class="hero-text">
+        <div class="hero-badge animate-fade-up">
+          🛵 &nbsp;Entrega em até 40 minutos
+        </div>
+
+        <h1 class="hero-title animate-fade-up animate-delay-1">
+          A Arte de Fazer<br>
+          <em class="hero-highlight">Hambúrgueres</em><br>
+          Inesquecíveis
+        </h1>
+
+        <p class="hero-subtitle animate-fade-up animate-delay-2">
+          Ingredientes selecionados, receitas exclusivas e sabor artesanal entregues diretamente na sua porta.
+        </p>
+
+        <div class="hero-buttons animate-fade-up animate-delay-3">
+          <button class="btn-cta" onclick="scrollToSection('cardapio')" aria-label="Ir para o cardápio e fazer pedido">
+            🍔 Pedir Agora
+          </button>
+          <button class="btn-outline" onclick="scrollToSection('cardapio')" aria-label="Ver o cardápio completo">
+            Ver Cardápio
+          </button>
+        </div>
+
+        <div class="hero-stats animate-fade-up animate-delay-4">
+          <div class="stat-item">
+            <strong class="stat-num">500+</strong>
+            <span class="stat-lbl">Pedidos/dia</span>
+          </div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat-item">
+            <strong class="stat-num">4.9 ★</strong>
+            <span class="stat-lbl">Avaliação</span>
+          </div>
+          <div class="stat-sep" aria-hidden="true"></div>
+          <div class="stat-item">
+            <strong class="stat-num">40 min</strong>
+            <span class="stat-lbl">Entrega</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Imagem -->
+      <div class="hero-visual animate-fade-left">
+        <div class="hero-img-ring" aria-hidden="true"></div>
+        <div class="hero-img-wrapper">
+          <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=600&h=600&fit=crop&q=85"
+            alt="Hambúrguer artesanal Test burguers" class="hero-img" loading="eager" decoding="async">
+        </div>
+        <div class="hero-badge-floating">
+          <span>✨ Novo</span>
+          <strong>Duplo Cheddar</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll cue -->
+    <div class="hero-scroll-cue" aria-hidden="true">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+
+  <!-- =========================================
+       SOBRE NÓS
+  ========================================= -->
+  <section class="sobre" id="sobre" aria-label="Sobre a Test burguers">
+    <div class="container">
+      <div class="sobre-grid">
+
+        <!-- Texto -->
+        <div class="sobre-content reveal">
+          <div class="section-eyebrow">Nossa História</div>
+          <h2 class="section-title">
+            Paixão Artesanal em <span class="text-gold">Cada Mordida</span>
+          </h2>
+          <p class="sobre-desc">
+            Nascemos da paixão por criar experiências gastronômicas únicas. Cada hambúrguer é preparado com ingredientes
+            frescos e selecionados, combinando técnicas tradicionais com criatividade contemporânea.
+          </p>
+          <p class="sobre-desc">
+            Nosso compromisso é transformar cada pedido em um momento especial — com sabores que ficam gravados na
+            memória e qualidade que faz você voltar sempre.
+          </p>
+
+          <div class="sobre-features">
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">🥩</span>
+              <div class="feature-info">
+                <strong>Blend Exclusivo</strong>
+                <p>Carne fresca selecionada diariamente</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">🍞</span>
+              <div class="feature-info">
+                <strong>Pão Brioche</strong>
+                <p>Produção artesanal toda manhã</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <span class="feature-icon" aria-hidden="true">⚡</span>
+              <div class="feature-info">
+                <strong>Entrega Expressa</strong>
+                <p>Quentinho na sua porta em 40 min</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Imagens -->
+        <div class="sobre-images reveal">
+          <div class="sobre-img-main">
+            <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?w=500&h=420&fit=crop&q=80"
+              alt="Hambúrguer artesanal preparado na Test burguers" loading="lazy">
+          </div>
+          <div class="sobre-img-float">
+            <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=220&h=200&fit=crop&q=80"
+              alt="Combo com batata frita" loading="lazy">
+            <div class="sobre-badge-float">
+              <span>🏆</span>
+              <small>Melhor da cidade</small>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- =========================================
+       DESTAQUES / PROMOÇÕES -->
+  <section class="destaques" id="promocoes" aria-label="Produtos em destaque">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Mais Pedidos</div>
+        <h2 class="section-title">
+          🔥 Os <span class="text-gold">Favoritos</span> da Casa
+        </h2>
+        <p class="section-subtitle">Os hambúrgueres mais amados pelos nossos clientes</p>
+      </div>
+
+      <div class="produtos-grid destaques-grid" id="destaquesGrid" aria-live="polite">
+
+        <div class="loading-produtos">
+          <div class="spinner"></div>
+          <p>Carregando destaques...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CARDÁPIO COMPLETO -->
+  <section class="cardapio" id="cardapio" aria-label="Cardápio completo">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Cardápio</div>
+        <h2 class="section-title">
+          Nosso <span class="text-gold">Menu</span> Completo
+        </h2>
+        <p class="section-subtitle">Escolha seus favoritos e finalize o pedido pelo WhatsApp</p>
+      </div>
+
+      <!-- Filtros de Categoria -->
+      <div class="category-filters reveal" id="categoryFilters" role="tablist" aria-label="Filtrar por categoria">
+        <button id="tab-todos" class="filter-btn active" data-categoria="todos" onclick="filtrarPorCategoria('todos')"
+          role="tab" aria-selected="true" aria-controls="produtos-panel">🍔 Todos</button>
+        <button id="tab-hamburguer" class="filter-btn" data-categoria="hamburguer"
+          onclick="filtrarPorCategoria('hamburguer')" role="tab" aria-selected="false" aria-controls="produtos-panel">🥩
+          Hambúrgueres</button>
+        <button id="tab-combo" class="filter-btn" data-categoria="combo" onclick="filtrarPorCategoria('combo')"
+          role="tab" aria-selected="false" aria-controls="produtos-panel">🍟 Combos</button>
+        <button id="tab-bebida" class="filter-btn" data-categoria="bebida" onclick="filtrarPorCategoria('bebida')"
+          role="tab" aria-selected="false" aria-controls="produtos-panel">🥤 Bebidas</button>
+        <button id="tab-sobremesa" class="filter-btn" data-categoria="sobremesa"
+          onclick="filtrarPorCategoria('sobremesa')" role="tab" aria-selected="false" aria-controls="produtos-panel">🍫
+          Sobremesas</button>
+      </div>
+
+      <div role="tabpanel" id="produtos-panel" aria-labelledby="tab-todos" tabindex="0">
+        <div class="produtos-grid" id="produtosGrid" aria-live="polite">
+
+          <div class="loading-produtos">
+            <div class="spinner"></div>
+            <p>Carregando cardápio...</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- AVALIAÇÕES -->
+  <section class="avaliacoes" id="avaliacoes" aria-label="Avaliações dos clientes">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Avaliações</div>
+        <h2 class="section-title">
+          O Que Nossos <span class="text-gold">Clientes</span> Dizem
+        </h2>
+        <p class="section-subtitle">Mais de 1.000 clientes satisfeitos e apaixonados</p>
+      </div>
+
+      <div class="avaliacoes-grid">
+
+        <article class="avaliacao-card reveal" aria-label="Avaliação de Maria Aparecida">
+          <div class="avaliacao-top">
+            <div class="avaliacao-avatar" aria-hidden="true">MA</div>
+            <div class="avaliacao-info">
+              <strong class="avaliacao-nome">Maria Aparecida</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <blockquote class="avaliacao-texto">
+            "Melhor hambúrguer de Montes Claros, sem dúvida! O Smash Bacon é simplesmente perfeito — a carne suculenta e
+            o bacon crocante se complementam perfeitamente. Entrega super rápida, chegou quentinho!"
+          </blockquote>
+          <time class="avaliacao-data" datetime="2025-01-20">Há 2 dias</time>
+        </article>
+
+        <article class="avaliacao-card reveal" aria-label="Avaliação de João Silva">
+          <div class="avaliacao-top">
+            <div class="avaliacao-avatar" aria-hidden="true">JS</div>
+            <div class="avaliacao-info">
+              <strong class="avaliacao-nome">João Silva</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <blockquote class="avaliacao-texto">
+            "Pedí o Combo Duplo Cheddar e fiquei impressionado com a qualidade. O pão brioche é artesanal de verdade,
+            muito diferente dos concorrentes. Já é a 4ª semana seguida que peço todo sábado!"
+          </blockquote>
+          <time class="avaliacao-data" datetime="2025-01-15">Há 1 semana</time>
+        </article>
+
+        <article class="avaliacao-card reveal" aria-label="Avaliação de Patrícia Costa">
+          <div class="avaliacao-top">
+            <div class="avaliacao-avatar" aria-hidden="true">PC</div>
+            <div class="avaliacao-info">
+              <strong class="avaliacao-nome">Patrícia Costa</strong>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+          <blockquote class="avaliacao-texto">
+            "Atendimento impecável! Fiz o pedido pelo WhatsApp, fui muito bem atendida e em 35 minutos estava na porta.
+            O Petit Gateau de sobremesa é de outro nível — finalizei em primeiro lugar na próxima!"
+          </blockquote>
+          <time class="avaliacao-data" datetime="2025-01-18">Há 3 dias</time>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTATO -->
+  <section class="contato" id="contato" aria-label="Informações de contato">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Contato</div>
+        <h2 class="section-title">
+          Fale <span class="text-gold">Conosco</span>
+        </h2>
+      </div>
+
+      <div class="contato-grid">
+        <div class="contato-info reveal">
+          <div class="contato-item">
+            <span class="contato-icon" aria-hidden="true">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Montes Claros — MG, 39400-000</p>
+            </div>
+          </div>
+
+          <div class="contato-item">
+            <span class="contato-icon" aria-hidden="true">🕒</span>
+            <div>
+              <strong>Horário de Funcionamento</strong>
+              <p>Segunda a Sexta: 18h às 23h<br>Sábado e Domingo: 12h às 23h</p>
+            </div>
+          </div>
+
+          <div class="contato-item">
+            <span class="contato-icon" aria-hidden="true">📱</span>
+            <div>
+              <strong>WhatsApp</strong>
+              <p>(38) 99999-999</p>
+            </div>
+          </div>
+
+          <div class="contato-item">
+            <span class="contato-icon" aria-hidden="true">📸</span>
+            <div>
+              <strong>Instagram</strong>
+              <p>@test.burguer2</p>
+            </div>
+          </div>
+
+          <div class="contato-redes">
+            <a href="https://wa.me/553899999999" class="rede-btn btn-whats" target="_blank" rel="noopener noreferrer"
+              aria-label="Fale conosco no WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5 -.669-.51 -.173 -.008 -.371 -.01 -.57 -.01 -.198 0 -.52 .074 -.792 .372 -.272 .297 -1.04 1.016 -1.04 2.479 0 1.462 1.065 2.875 1.2₁₃ 3.074 .₁₄₉ .₁₉₈ ₂₀₉₆ ₃₂ ₅₀₇₇ ₄₄₈₇ .₇₀₉ .₃₀₆ ₁₂₆₂ .₄₈₉ ₁․₆⁹⁴ .⁶²⁵ .⁷¹² .²²⁷ ₁․³⁶ .¹⁹⁵ ₁․⁸⁷¹ .¹¹⁸ .⁵⁷¹ -." />
+              </svg>
+              WhatsApp
+            </a>
+            <a href="https://www.instagram.com/test.burguer2/" class="rede-btn btn-insta" target="_blank"
+              rel="noopener noreferrer" aria-label="Siga-nos no Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="20" height="20">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+              Instagram
+            </a>
+          </div>
+        </div>
+
+        <!-- Mapa -->
+        <div class="contato-mapa reveal">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61135.62993813681!2d-43.89228245685883!3d-16.728005816650686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xab54b430dce6f5%3A0x231bf948b0041bbb!2sMontes%20Claros%2C%20MG!5e0!3m2!1spt-BR!2sbr!4v1782434814238!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin" title="Localização Test Burgers em Montes Claros"
+            loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <span class="logo-icon">🔥</span>
+            <div>
+              <span class="logo-arte">TEST</span>
+              <span class="logo-burgers">BURGERS</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Hambúrgueres artesanais feitos com paixão, ingredientes selecionados e muito amor em cada mordida.
+          </p>
+          <div class="footer-redes">
+            <a href="https://wa.me/5538999999999" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+              </svg>
+            </a>
+            <a href="https://www.instagram.com/test.burguer2/" target="_blank" rel="noopener noreferrer"
+              aria-label="Instagram">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" aria-hidden="true">
+                <path
+                  d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <nav class="footer-links" aria-label="Links rápidos do rodapé">
+          <h3 class="footer-heading">Links Rápidos</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#cardapio">Cardápio</a></li>
+            <li><a href="#promocoes">Promoções</a></li>
+            <li><a href="#avaliacoes">Avaliações</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="footer-info">
+          <h3 class="footer-heading">Informações</h3>
+          <ul>
+            <li>📍 Montes Claros/MG</li>
+            <li>📱 (38) 99999-9999</li>
+            <li>🕒 Seg–Sex: 18h às 23h</li>
+            <li>🕒 Sáb–Dom: 12h às 23h</li>
+          </ul>
+          <div class="footer-cupom-hint">
+            <span>🎁</span>
+            <span>Use o cupom <strong>TEST10</strong> e ganhe 10% OFF!</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Test burguers — Hamburgueria Artesanal. Todos os direitos reservados.</p>
+        <p class="footer-credits">Feito com ❤️ em Montes Claros, MG</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay" aria-hidden="true"></div>
+
+  <aside class="cart-sidebar" id="cartSidebar" role="dialog" aria-modal="true">
+    <!-- Header fixo -->
+    <div class="cart-header">
+      <h2 class="cart-title">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="22" height="22"
+          aria-hidden="true">
+          <path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z" />
+          <line x1="3" y1="6" x2="21" y2="6" />
+          <path d="M16 10a4 4 0 01-8 0" />
+        </svg>
+        Minha Sacola
+      </h2>
+      <button class="cart-close-btn" id="cartClose" aria-label="Fechar sacola">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"
+          aria-hidden="true">
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Conteúdo rolável -->
+    <div class="cart-content" id="cartContent">
+
+      <!-- Estado vazio -->
+      <div class="cart-empty" id="cartEmpty">
+        <div class="empty-icon" aria-hidden="true">🛒</div>
+        <p class="empty-title">Sua sacola está vazia</p>
+        <p class="empty-subtitle">Adicione produtos do nosso cardápio</p>
+        <button class="btn-cta" onclick="fecharCarrinho(); scrollToSection('cardapio')">
+          Ver Cardápio
+        </button>
+      </div>
+
+      <!-- Itens do carrinho -->
+      <div class="cart-items" id="cartItems" aria-live="polite"></div>
+
+      <!-- Cupom de Desconto -->
+      <div class="cart-coupon" id="cartCoupon" style="display:none">
+        <h3 class="cart-section-title">🎁 Cupom de Desconto</h3>
+        <div class="coupon-row">
+          <input type="text" id="cupomInput" placeholder="Ex: TEST10" aria-label="Código do cupom de desconto"
+            autocomplete="off" autocapitalize="characters">
+          <button id="cupomBtn" onclick="aplicarCupom()">Aplicar</button>
+        </div>
+        <div class="coupon-feedback" id="cupomFeedback" aria-live="polite"></div>
+      </div>
+
+      <!-- Campo de CEP e endereço -->
+      <div class="cart-delivery" id="cartDelivery" style="display:none">
+        <h3 class="cart-section-title">🏠 Calcular entrega pelo CEP</h3>
+
+        <div class="form-group">
+          <label for="cepInput">CEP</label>
+          <input type="text" id="cepInput" placeholder="00000-000" aria-label="Digite seu CEP para calcular a entrega"
+            maxlength="9" autocomplete="postal-code" oninput="formatarCep(event)">
+          <div class="cep-feedback" id="cepFeedback" aria-live="polite"></div>
+        </div>
+
+        <div class="cart-cep-info" aria-live="polite">
+          <div class="cep-row">
+            <div class="cep-item">
+              <label for="logradouroInput">Logradouro</label>
+              <input type="text" id="logradouroInput" readonly>
+            </div>
+            <div class="cep-item">
+              <label for="bairroEncontrado">Bairro identificado</label>
+              <input type="text" id="bairroEncontrado" readonly>
+            </div>
+          </div>
+          <div class="cep-status-row">
+            <span id="cepFreteInfo">Frete: A calcular</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Resumo de valores -->
+      <div class="cart-summary" id="cartSummary" style="display:none">
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span id="cartSubtotal">R$ 0,00</span>
+        </div>
+        <div class="summary-row summary-discount" id="descontoRow" style="display:none">
+          <span>Desconto</span>
+          <span id="cartDesconto">— R$ 0,00</span>
+        </div>
+        <div class="summary-row">
+          <span>Entrega</span>
+          <span id="cartEntrega">A calcular</span>
+        </div>
+        <div class="summary-row summary-total">
+          <span>Total</span>
+          <span id="cartTotal">R$ 0,00</span>
+        </div>
+      </div>
+
+      <!-- Formulário do Cliente -->
+      <div class="cart-form" id="cartForm" style="display:none">
+        <h3 class="cart-section-title">📋 Seus Dados</h3>
+
+        <div class="form-group">
+          <label for="clienteNome">Nome <span aria-hidden="true">*</span></label>
+          <input type="text" id="clienteNome" placeholder="Seu nome completo" autocomplete="name" required>
+        </div>
+        <div class="form-group">
+          <label for="clienteTelefone">Telefone <span aria-hidden="true">*</span></label>
+          <input type="tel" id="clienteTelefone" placeholder="(38) 99999-9999" autocomplete="tel" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="clienteNumero">Número <span aria-hidden="true">*</span></label>
+            <input type="text" id="clienteNumero" placeholder="Nº" required>
+          </div>
+          <div class="form-group">
+            <label for="clienteComplemento">Complemento</label>
+            <input type="text" id="clienteComplemento" placeholder="Apto, Bloco...">
+          </div>
+        </div>
+        <!-- Pagamento -->
+        <div class="payment-section">
+          <h3 class="cart-section-title">💳 Forma de Pagamento</h3>
+          <div class="payment-options" role="radiogroup" aria-label="Escolha a forma de pagamento">
+            <label class="payment-option">
+              <input type="radio" name="pagamento" value="PIX" onchange="verificarPagamento()">
+              <span class="payment-label"><span aria-hidden="true">📱</span> Pix</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="pagamento" value="CARTÃO" onchange="verificarPagamento()">
+              <span class="payment-label"><span aria-hidden="true">💳</span> Cartão</span>
+            </label>
+            <label class="payment-option">
+              <input type="radio" name="pagamento" value="DINHEIRO" onchange="verificarPagamento()">
+              <span class="payment-label"><span aria-hidden="true">💵</span> Dinheiro</span>
+            </label>
+          </div>
+          <div class="troco-field" id="trocoField" style="display:none">
+            <label for="trocoValor">Troco para quanto?</label>
+            <input type="number" id="trocoValor" placeholder="Ex: 100.00" min="0" step="0.01">
+          </div>
+        </div>
+
+        <!-- Botão Finalizar -->
+        <button class="btn-finalizar" onclick="finalizarPedido()" aria-label="Finalizar pedido e abrir WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20" aria-hidden="true">
+            <path
+              d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          Finalizar Pedido via WhatsApp
+        </button>
+
+        <p class="finalizar-hint">
+          Você será redirecionado ao WhatsApp com seu pedido já preenchido.
+        </p>
+      </div>
+    </div><!-- /cart-content -->
+  </aside>
+
+
+  <!-- ELEMENTOS FLUTUANTES -->
+  <!-- Voltar ao topo -->
+  <button class="back-to-top" id="backToTop" aria-label="Voltar ao topo da página">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="18" height="18"
+      aria-hidden="true">
+      <polyline points="18 15 12 9 6 15" />
+    </svg>
+  </button>
+
+  <!-- WhatsApp flutuante -->
+  <a href="https://wa.me/553892610825" class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+    aria-label="Fale conosco pelo WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24" aria-hidden="true">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+    <span class="wf-label">Falar no WhatsApp</span>
+  </a>
+
+  <!-- Toast de Notificação -->
+  <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+
+  <script src="app.js"></script>
+  <script src="carrinho.js"></script>
+  <script src="cupons.js"></script>
+  <script src="produtos.js"></script>
+  <script src="whatsapp.js"></script>
+
+</body>
+
+</html>
