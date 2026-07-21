@@ -1,0 +1,41 @@
+{
+  "brand": {
+    "name": "Pastelecia",
+    "tagline": "O sabor que conquista na primeira mordida!",
+    "shortDescription": "Pastéis • Hambúrguer • Caldo de Cana",
+    "logo": "/images/logo.svg"
+  },
+  "contact": {
+    "whatsappNumber": "5538999192159",
+    "whatsappDisplay": "+55 (38) 99919-2159",
+    "whatsappLink": "https://wa.me/5538999192159",
+    "instagram": "https://www.instagram.com/pastelecia.moc/",
+    "instagramHandle": "@pastelecia.moc"
+  },
+  "address": {
+    "street": "Av. São Judas, 2160",
+    "neighborhood": "Cristo Rei",
+    "city": "Montes Claros",
+    "state": "MG",
+    "zipCode": "39402-558",
+    "full": "Av. São Judas, 2160 - Cristo Rei, Montes Claros - MG, 39402-558",
+    "mapsQuery": "Av. São Judas, 2160, Cristo Rei, Montes Claros - MG, 39402-558"
+  },
+  "hours": {
+    "days": "Segunda a Sábado",
+    "open": "16:00",
+    "close": "00:00",
+    "closedDays": ["Domingo"]
+  },
+  "payments": {
+    "methods": ["PIX", "Cartão de Crédito", "Cartão de Débito", "Dinheiro"]
+  },
+  "delivery": {
+    "estimateMinutes": [35, 55],
+    "minOrder": 20.0
+  },
+  "seo": {
+    "title": "Pastelecia — Pastéis, Hambúrguer e Caldo de Cana em Montes Claros",
+    "description": "O sabor que conquista na primeira mordida! Peça pastéis, hambúrguer artesanal e caldo de cana da Pastelecia em Montes Claros - MG, direto pelo WhatsApp."
+  }
+}
